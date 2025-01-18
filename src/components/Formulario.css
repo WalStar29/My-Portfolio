@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&display=swap');
+
+.form{
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 20px 50px 20px 50px;
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    padding: 2% 1%;
+    text-align: left;
+    font-family: "Anton", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.form label{
+    margin: 2% 0;
+    padding: 0%;
+    color: rgb(0, 0, 0);
+}
+
+.form input{
+    padding: 2%;
+    border-radius: 10px;
+    border: none;
+    margin: 0 0 2% 0;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255, 0.5);
+}.form input:hover{
+    background-color: rgb(255, 255, 255);
+    backdrop-filter: blur(1px);
+}
+
+.texBot{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+textarea{
+    border-radius: 10px;
+    padding: 2% 2% 10% 2%;
+    width: 90%;
+    height: auto;
+    resize: none;
+    margin: 0 0 2% 0;
+}
+
+@media(max-width: 900px){
+    .form{
+        width: 90%;
+        padding: 0 2%;
+    }
+
+    textarea{
+        width: 100%;
+    }
+
+    .form input{
+        padding: 3% 5%;
+    }
+}

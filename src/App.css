@@ -1,0 +1,116 @@
+
+.App h1{
+  text-align: center;
+}
+
+.me{
+  width: 100%;
+}
+
+
+
+.ContenedorPadre{
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 2% 0;
+  transition: all 800ms;
+}
+
+.ContainerHijo{
+  width: 30%;
+  padding: 10% 0 0 0;
+}
+
+.ContainerHijo2{
+  width: 60%;
+  transition: all 1200ms;
+}.ContainerHijo2:hover{
+  background-color:rgb(5, 155, 255, 0.7);
+  transition: all 1200ms;
+  border-radius: 100px 20px 50px 20px;
+}
+
+.ContainerHijo2 .lenguajes{
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+  transition: all 800ms;
+  padding: 0 0 5% 0;
+}.ContainerHijo2 .lenguajes:hover{
+  background-color: rgb(255, 255, 255, 0.5);
+  transition: all 800ms;
+  color: rgb(0, 0, 0);
+  border-radius: 20px 100px 50px 20px;
+}
+
+
+
+.Proyecto{
+  width: 100%;
+  margin: 0 0 5% 0;
+  padding: 10% 0 0 0;
+}
+
+.Proyecto .MisProyectos{
+  width: 100%;
+  display: inline-block;
+}
+
+
+
+.formulario{
+  margin: 10% 0 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+@media(max-width: 900px){
+  .ContenedorPadre{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .ContainerHijo{
+    margin-top: 10%;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    padding: 0;
+  }
+
+  .ContainerHijo2{
+    width: 100%;
+    padding: 7% 0 0 0;
+  }.ContainerHijo2:hover{
+    padding: 0;
+    border-radius: 50px 20px 50px 20px;
+  }
+
+  .ContainerHijo2 h1{
+    font-size: 250%;
+  }
+
+  .ContainerHijo2 .lenguajes{
+    padding: 0;
+  }.ContainerHijo2 .lenguajes:hover{
+    border-radius: 20px 20px 50px 20px;
+  }
+
+
+  .Proyecto h1{
+    font-size: 250%;
+  }
+
+
+
+  .formulario{
+    padding: 0;
+  }
+}
+
