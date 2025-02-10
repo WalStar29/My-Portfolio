@@ -1,17 +1,17 @@
 const frontend = [
     {   
         name: "HTML",
-        imagen: "/Logos/html.png"
+        imagen: "https://github.com/WalStar29/My-Portfolio/blob/main/Logos/html.png?raw=true"
     },
 
     {   
         name: "CSS",
-        imagen: "/Logos/css.png"
+        imagen: "https://github.com/WalStar29/My-Portfolio/blob/main/Logos/css.png?raw=true"
     },
 
     {   
         name: "JS",
-        imagen: "/Logos/JavaScript.png"
+        imagen: "https://github.com/WalStar29/My-Portfolio/blob/main/Logos/JavaScript.png?raw=true"
     }
 ];
 

@@ -1,17 +1,17 @@
 const tools = [
     {   
         name: "Git",
-        imagen: "/Logos/git.png"
+        imagen: "https://github.com/WalStar29/My-Portfolio/blob/main/Logos/git.png?raw=true"
     },
 
     {   
         name: "Github",
-        imagen: "/Logos/github.png"
+        imagen: "https://github.com/WalStar29/My-Portfolio/blob/main/Logos/github.png?raw=true"
     },
 
     {   
         name: "Node JS",
-        imagen: "/Logos/nodejs.png"
+        imagen: "https://github.com/WalStar29/My-Portfolio/blob/main/Logos/nodejs.png?raw=true"
     },
 ];
 

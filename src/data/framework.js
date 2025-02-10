@@ -1,12 +1,12 @@
 const framework = [
     {   
         name: "Astro",
-        imagen: "/Logos/astro.png",
+        imagen: "https://github.com/WalStar29/My-Portfolio/blob/main/Logos/astro.png?raw=true",
     },
 
     {   
         name: "React",
-        imagen: "/Logos/react.png",
+        imagen: "https://github.com/WalStar29/My-Portfolio/blob/main/Logos/react.png?raw=true",
     }
 ]
 

@@ -1,17 +1,17 @@
 const lenguaje = [
     {   
         name: "C",
-        imagen: "/Logos/c.png"
+        imagen: "https://github.com/WalStar29/My-Portfolio/blob/main/Logos/c.png?raw=true"
     },
 
     {   
         name: "C++",
-        imagen: "/Logos/c++.png"
+        imagen: "https://github.com/WalStar29/My-Portfolio/blob/main/Logos/c++.png?raw=true"
     },
 
     {   
         name: "Python",
-        imagen: "/Logos/python.png"
+        imagen: "https://github.com/WalStar29/My-Portfolio/blob/main/Logos/python.png?raw=true"
     }
 ];
 
