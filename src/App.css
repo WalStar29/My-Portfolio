@@ -1,0 +1,132 @@
+.App h1{
+  text-align: center;
+}
+
+.me{
+  width: 100%;
+}
+
+.ContenedorPadre{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding: 2% 0 0 2%;
+  transition: all 800ms;
+  margin: 10% 0 10% 0;
+}.ContenedorPadre:hover{
+    background-color: rgba(255, 255, 255, 0.9);
+    color: rgb(0, 0, 0);
+    transition: all 800ms;
+    border-radius: 10px 50px 10px 50px;
+}
+
+.ContainerHijo{
+  width: 50%;
+  padding: 5% 0;
+}
+.ContainerHijo h2{
+  font-size: 250%;
+  color: rgb(0, 0, 0);
+}
+
+.ContenedorPadre .slider{
+  width: 80%;
+  padding: 4% 0 1% 5%;
+  text-align: center;
+}
+
+.tecnologias{
+  width: 100%;
+  margin: 0 0 5% 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 3 columnas de igual tamaño */
+  grid-gap: 20px;
+  padding: 5% 0 5% 8%;
+  transition: all 800ms;
+}.tecnologias:hover{
+    background-color: rgb(255, 255, 255, 0.9);
+    color: rgb(0, 0, 0);
+    transition: all 800ms;
+    border-radius: 10px 50px 10px 50px;
+}
+
+.tecnologias .content{
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 2% 0 0 0;
+  text-align: center;
+  padding: 2% 0;
+  border: solid 2px black;
+}
+
+.Proyecto{
+  width: 100%;
+  margin: 0 0 5% 0;
+  padding: 5% 0;
+  transition: all 800ms;
+}.Proyecto:hover{
+  background-color: rgba(107, 107, 107, 0.9);
+  transition: all 800ms;
+  border-radius: 10px 50px 10px 50px;
+}
+
+.Proyecto .MisProyectos{
+  width: 100%;
+  display: inline-block;
+}
+
+.formulario{
+  margin: 10% 0 5% 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+
+@media(max-width: 900px){
+  .ContenedorPadre{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .ContenedorPadre .ContainerHijo{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+  }
+  .ContainerHijo h2{
+    font-size: 200%;
+  }
+
+  .ContenedorPadre .slider{
+    width: 100%;
+  }
+
+  .tecnologias{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .tecnologias h1{
+    font-size: 200%;
+  }
+
+  .tecnologias .content{
+    width: 90%;
+  }
+
+  .Proyecto h1{
+    font-size: 200%;
+  }
+
+  .formulario{
+    width: 100%;
+  }
+
+}
+
+

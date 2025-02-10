@@ -1,0 +1,18 @@
+.logos{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 30%;
+    margin-top: 5%;
+    transition: all 800ms;
+}.logos:hover{
+    transform: scale(1.6);
+    transition: all 800ms;
+}
+
+.logos img:hover{
+    background-color: rgb(255, 255, 255);
+}
+

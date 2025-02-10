@@ -1,0 +1,16 @@
+.boton button{
+    background-color: rgb(255, 255, 255);
+    padding: 4% 2%;
+    margin: 2% 0 0 0;
+    border: none;
+    border-radius: 10px;
+    transition: all 800ms;
+    color: rgb(0, 0, 0);
+}
+
+.boton button:hover{
+    transition: all 200ms;
+    cursor: pointer;
+    border-bottom: solid 4px rgb(5, 155, 255);
+    border-top: solid 2px rgb(0, 0, 0);
+}
