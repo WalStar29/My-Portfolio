@@ -56,7 +56,7 @@ function App() {
           Busco seguir creciendo tanto personal como profesionalmente en el area de Ingenieria en Sistemas. 
           Tengo capacidad de logica buscando solucion a problemas, tengo experiencia en el Área del Desarrollo de paginas web 
           y con entusiasmo para aprender nuevas areas. Poseo conocimiento básicos de administración y 
-          uso de software de oficina. " image="https://github.com/WalStar29/My-Portfolio/blob/main/me.jpg?raw=true"/>
+          uso de software de oficina. " image="https://github.com/WalStar29/My-Portfolio/blob/main/public/me.jpg?raw=true"/>
       </div>
 
       <div className="ContenedorPadre" id='pilas'>
@@ -72,7 +72,7 @@ function App() {
         </div>
 
         <div className="slider">
-          <ImageSlider imagen="/Logos/astro.png" imagen2="/Logos/c++.png" imagen3="/Logos/html.png" imagen4="/Logos/mysql.png" imagen5="/Logos/JavaScript.png"/>
+          <ImageSlider imagen="https://github.com/WalStar29/My-Portfolio/blob/main/public/Logos/astro.png?raw=true" imagen2="https://github.com/WalStar29/My-Portfolio/blob/main/public/Logos/c++.png?raw=true" imagen3="https://github.com/WalStar29/My-Portfolio/blob/main/public/Logos/html.png?raw=true" imagen4="https://github.com/WalStar29/My-Portfolio/blob/main/public/Logos/mysql.png?raw=true" imagen5="https://github.com/WalStar29/My-Portfolio/blob/main/public/Logos/JavaScript.png?raw=true"/>
         </div>
       </div>
 
