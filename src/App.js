@@ -56,7 +56,7 @@ function App() {
           Busco seguir creciendo tanto personal como profesionalmente en el area de Ingenieria en Sistemas. 
           Tengo capacidad de logica buscando solucion a problemas, tengo experiencia en el Área del Desarrollo de paginas web 
           y con entusiasmo para aprender nuevas areas. Poseo conocimiento básicos de administración y 
-          uso de software de oficina. " image="https://github.com/WalStar29/My-Portfolio/blob/main/public/me.jpg?raw=true"/>
+          uso de software de oficina. " image="https://github.com/WalStar29/My-Portfolio/blob/main/me.jpg?raw=true"/>
       </div>
 
       <div className="ContenedorPadre" id='pilas'>
