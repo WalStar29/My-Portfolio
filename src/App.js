@@ -59,6 +59,7 @@ function App() {
           uso de software de oficina. " image="https://github.com/WalStar29/My-Portfolio/blob/main/public/me.jpg?raw=true"/>
       </div>
 
+        
       <div className="ContenedorPadre" id='pilas'>
         <div className="ContainerHijo">
           <h2>
@@ -71,7 +72,7 @@ function App() {
           que me permiten estar a la vanguardia en el desarrollo de soluciones innovadoras."/>
         </div>
 
-        <div className="slider">
+        <div className="sliderr">
           <ImageSlider imagen="https://github.com/WalStar29/My-Portfolio/blob/main/public/Logos/astro.png?raw=true" imagen2="https://github.com/WalStar29/My-Portfolio/blob/main/public/Logos/c++.png?raw=true" imagen3="https://github.com/WalStar29/My-Portfolio/blob/main/public/Logos/html.png?raw=true" imagen4="https://github.com/WalStar29/My-Portfolio/blob/main/public/Logos/mysql.png?raw=true" imagen5="https://github.com/WalStar29/My-Portfolio/blob/main/public/Logos/JavaScript.png?raw=true"/>
         </div>
       </div>
@@ -114,8 +115,10 @@ function App() {
       <div id='contacto' className="formulario">
         <Formulario></Formulario>
       </div>
-
+    
       <Footer/>
+
+
     </div>
   );
 }
