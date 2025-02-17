@@ -11,3 +11,7 @@
     transition: all 300ms;
     border-radius: 100px 0 100px 0;
 }
+
+.framework img{
+    width: 20%;
+}

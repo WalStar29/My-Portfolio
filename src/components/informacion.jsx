@@ -7,11 +7,11 @@ function Informacion({tilte, image, informacion}) {
             <div className="contenedor">
                 <div className='top'>
                     <h1>{tilte}</h1>
-                    <img src={image} alt="imagen" />
+                    {informacion}
                 </div>
 
-                <div className='informacion'>
-                    {informacion}
+                <div className='imagen'>
+                    <img src={image} alt="imagen" />
                 </div>
             </div> 
         </div>

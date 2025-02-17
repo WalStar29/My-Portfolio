@@ -42,8 +42,6 @@ function App() {
     return <Proyectos name={p.name} imagen={p.imagen} ulr={p.ulr} ulr2={p.ulr2} descripcion={p.descripcion}/>
   })
   
-
-
   return (
     <div className="App">
       <Nav AcercaDeMi="Acerca de mi" Pilas="Pilas Tecnologicas" Proyectos="Mis Proyectos" Contacto="Contacto" id='#me' id2='#pilas' id3='#proyecto' id4='#contacto'/>
