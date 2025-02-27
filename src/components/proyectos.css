@@ -6,9 +6,9 @@
     margin: 0 5% 0% 7%;
     border-radius: 10px;
     display: inline-block;
+    color: rgb(0, 0, 0);
 }.Pro:hover{
     background-color: rgba(255, 255, 255);
-    color: rgb(0, 0, 0);
     transition: all 800ms;
     border-radius: 50px 10px 50px 10px;
 }
