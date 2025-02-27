@@ -7,13 +7,10 @@
     display: flex;
     padding: 2% 0;
     width: 100%;
-    transition: all 800ms;
     cursor: context-menu;
     color: rgb(0, 0, 0);
-}.contenedor:hover{
-    background-color: rgb(255, 255, 255, 0.9);
-    transition: all 800ms;
     border-radius: 10px 50px 10px 50px;
+    background-color: rgb(255, 255, 255, 0.9);
 }
 
 .top{
@@ -26,13 +23,14 @@
 }
 
 h1{
-    font-size: 350%;
-    text-shadow: 2px 5px 5px #000000;
+    font-size: 250%;
+    text-shadow: 0px 1px 5px #000000;
 }
 
 img{
-    width: 50%;
+    width: 40%;
     border-radius: 10px;
+    border: solid 2px #000000;
 }
 
 .imagen{
@@ -57,7 +55,7 @@ img{
         width: 100%;
     }
 
-    .contenedor h1{
-        font-size: 250%;
+    h1{
+        font-size: 200%;
     }
 }

@@ -60,9 +60,9 @@ function App() {
         
       <div className="ContenedorPadre" id='pilas'>
         <div className="ContainerHijo">
-          <h2>
+          <h1>
             Experiencias en el area del desarrollo
-          </h2>
+          </h1>
           <DescripcionExperiencias descripcionExperien="Las siguientes experiencias que he tenido se han 
           basado en los aprendizajes de distintas tecnologías y lenguajes de programación, 
           demostrando un gran empeño en el área. Mi pasión por las nuevas tecnologías y lenguajes 
