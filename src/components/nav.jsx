@@ -12,7 +12,5 @@ function Nav ({ AcercaDeMi, Pilas, Proyectos, Contacto, id, id2, id3, id4}) {
             </ul>
         </nav>   
     );
-
-
 }
 export default Nav;

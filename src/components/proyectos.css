@@ -3,7 +3,7 @@
     height: auto;
     transition: all 800ms;
     padding: 1% 0% 5% 0%;
-    margin: 0 5% 0% 7%;
+    margin: 0 5% 5% 7%;
     border-radius: 10px;
     display: inline-block;
     color: rgb(0, 0, 0);
@@ -11,6 +11,7 @@
     background-color: rgba(255, 255, 255);
     transition: all 800ms;
     border-radius: 50px 10px 50px 10px;
+    box-shadow: 10px 5px 100px rgb(0, 0, 0);
 }
 
 .Pro .infProyect{

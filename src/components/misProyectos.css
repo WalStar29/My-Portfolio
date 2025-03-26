@@ -1,0 +1,25 @@
+.parte4{
+    margin-top: 10%;
+}
+
+.parte4 h1{
+  text-align: center;
+  padding: 5% 0;
+  color: #000000;
+  font-size: 200%;
+  text-shadow: 0px 1px 5px #000000;
+}
+
+.parte4 .cont4{
+  border-radius: 10px 50px 10px 50px;
+  filter: blur(10px);
+  transition: 1s;
+}
+
+.parte4 .inf4{
+  border-radius: 10px 50px 10px 50px;
+  background-color: rgba(255, 255, 255, 0.9);
+  filter: blur(0);
+  transition: 1s;
+}
+

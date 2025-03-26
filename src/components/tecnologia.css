@@ -12,6 +12,11 @@
     border-radius: 100px 0 100px 0;
 }
 
+.framework h4{
+    color: rgb(0, 0, 0);
+}
+
 .framework img{
     width: 20%;
 }
+
