@@ -1,25 +1,43 @@
 .parte4{
-    margin-top: 10%;
+  margin-top: -5%;
+}
+.parte4 .cont4{
+    transform: scale(0.5);
+    border-radius: 100%;
+    transition: 0.5s;
+    filter: blur(10px);
+}
+
+.parte4 .inf4{
+  cursor: context-menu;
+  color: rgb(0, 0, 0);
+  background-color: rgb(11, 102, 106, 0.5);
+  text-shadow: 0px 1px 5px #000000;
+  box-shadow: inset -10px -100px 150px rgb(255, 255, 255); 
+  transform: scale(0.8);
+  filter: blur(0); 
+  transition: 0.5s;
+  border-radius: 20px;
 }
 
 .parte4 h1{
   text-align: center;
+  color: #ffffff;
+  font-size: 250%;
   padding: 5% 0;
-  color: #000000;
-  font-size: 200%;
   text-shadow: 0px 1px 5px #000000;
 }
 
-.parte4 .cont4{
-  border-radius: 10px 50px 10px 50px;
-  filter: blur(10px);
-  transition: 1s;
-}
+@media(max-width: 900px){
+  .parte4{
+    margin-top: 5%;
+  }
 
-.parte4 .inf4{
-  border-radius: 10px 50px 10px 50px;
-  background-color: rgba(255, 255, 255, 0.9);
-  filter: blur(0);
-  transition: 1s;
-}
+  .parte4 h1{
+    font-size: 200%;
+  }
 
+  .parte4 .inf4{
+    transform: scale(1.0);
+  }
+}

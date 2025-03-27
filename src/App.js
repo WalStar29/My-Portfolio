@@ -6,7 +6,6 @@ import BarraLateral from './components/barraLateral'
 import Informacion from './components/informacion'
 import DescripcionExperiencias from './components/descripcionExperiencia'
 import Tecnologia from './components/tecnologia';
-import Proyectos from './components/proyectos';
 import MisProyectos from './components/misProyectos.jsx';
 import Formulario from './components/formulario';
 import Footer from './components/footer'
@@ -16,7 +15,6 @@ import lenguaje from './data/lenguajes';
 import web from './data/frontEnd';
 import datebase from './data/database';
 import tools from './data/tools';
-import proyectos from './data/proyectos';
 
 
 
@@ -64,12 +62,8 @@ function App() {
     return <Tecnologia name={l.name} img={l.imagen}/>
   })
 
-  const proyectosList = proyectos.map(p => {
-    return <Proyectos name={p.name} imagen={p.imagen} ulr={p.ulr} ulr2={p.ulr2} descripcion={p.descripcion}/>
-  })
-  
   return (
-    <div>
+    <div className='fondo'>
       <Nav AcercaDeMi="Acerca de mi" Pilas="Pilas Tecnologicas" Proyectos="Mis Proyectos" Contacto="Contacto" id='#me' id2='#pilas' id3='#proyecto' id4='#contacto'/>
       <BarraLateral AcercaDeMi="Acerca de mi" Pilas="Pilas Tecnologicas" Proyectos="Mis Proyectos" Contacto="Contacto" id='#me' id2='#pilas' id3='#proyecto' id4='#contacto'/>
 

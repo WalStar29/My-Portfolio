@@ -14,24 +14,33 @@
 }
 
 html {
-  font-family: Arial, Helvetica, sans-serif;
-  background-image: url(https://github.com/WalStar29/My-Portfolio/blob/main/public/fondo.jpg?raw=true);
-  background-position: center center;
-  background-size: cover;
-  background-attachment: fixed;
+  @import url('https://fonts.googleapis.com/css2?family=Anton&family=Azeret+Mono:ital,wght@0,100..900;1,100..900&family=Bebas+Neue&display=swap');
 }
 
 body {
+  position: relative;
   padding: 0;
   margin: 0;
+  background-color: rgb(7, 25, 82, 0.5);
+  box-shadow: inset -5px -20px 100px -2px rgb(151, 254, 237); /* Sombra interna */
+  font-family: "Azeret Mono", monospace;
+  font-optical-sizing: auto;
+  font-style: normal;
 }
 
-body::before { 
-  content: ""; 
-  position: fixed; 
-  width: 100%; 
-  height: 100%; 
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: -1;
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(https://github.com/WalStar29/My-Portfolio/blob/main/public/fondo.jpg?raw=true); /* Aquí va tu imagen de fondo */
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  filter: blur(2px); /* Aplica el efecto de desenfoque */
+  z-index: -1; /* Envía el pseudo-elemento detrás de los contenidos */
 }
+
 
