@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
-
 import './App.css';
+
+// Componentes
 import Nav from './components/nav'
 import BarraLateral from './components/barraLateral'
 import Informacion from './components/informacion'
@@ -10,6 +11,7 @@ import MisProyectos from './components/misProyectos.jsx';
 import Formulario from './components/formulario';
 import Footer from './components/footer'
 
+// Datos
 import frame from './data/framework';
 import lenguaje from './data/lenguajes';
 import web from './data/frontEnd';
@@ -19,27 +21,29 @@ import tools from './data/tools';
 
 
 function App() {
-          const contenedorRef = useRef(null); // Referencia al contenedor
-          const [isVisible, setIsVisible] = useState(false); // Estado para controlar la visibilidad del contenedor
-          
-          useEffect(() => {
-              const observer = new IntersectionObserver(
-              ([entry]) => {
-                  setIsVisible(entry.isIntersecting); // Cambia el estado si el contenedor es visible
-              },
-              { threshold: 0.1 } // El 10% del contenedor debe estar visible
-              );
-          
-              if (contenedorRef.current) {
-              observer.observe(contenedorRef.current); // Observa el contenedor
-              }
-          
-              return () => {
-                if (contenedorRef.current) {
-                    observer.unobserve(contenedorRef.current); // Deja de observar el contenedor al desmontarlo
-                }
-              };
-          }, []);
+    // Codigo de atividad del hover al hacer scroll
+    const contenedorRef = useRef(null); // Referencia al contenedor
+    const [isVisible, setIsVisible] = useState(false); // Estado para controlar la visibilidad del contenedor
+            
+    useEffect(() => {
+        const observer = new IntersectionObserver(
+            ([entry]) => {
+                setIsVisible(entry.isIntersecting); // Cambia el estado si el contenedor es visible
+            },
+
+            { threshold: 0.1 } // El 50% del contenedor debe estar visible
+        );
+            
+        if (contenedorRef.current) {
+            observer.observe(contenedorRef.current); // Observa el contenedor
+        }
+            
+        return () => {
+            if (contenedorRef.current) {
+                 observer.unobserve(contenedorRef.current); // Deja de observar el contenedor al desmontarlo
+            }
+        };
+    }, []);
 
 
   const framework = frame.map(f => {
@@ -63,7 +67,7 @@ function App() {
   })
 
   return (
-    <div className='fondo'>
+    <div className='fondo' id='me'>
       <Nav AcercaDeMi="Acerca de mi" Pilas="Pilas Tecnologicas" Proyectos="Mis Proyectos" Contacto="Contacto" id='#me' id2='#pilas' id3='#proyecto' id4='#contacto'/>
       <BarraLateral AcercaDeMi="Acerca de mi" Pilas="Pilas Tecnologicas" Proyectos="Mis Proyectos" Contacto="Contacto" id='#me' id2='#pilas' id3='#proyecto' id4='#contacto'/>
 
@@ -129,20 +133,7 @@ function App() {
       <div id='contacto' className="formulario">
         <Formulario></Formulario>
       </div>
-  
-        
-    
 
-
-
-
-
-
-
-
-
-
-    
       <Footer/>
     </div>
   );

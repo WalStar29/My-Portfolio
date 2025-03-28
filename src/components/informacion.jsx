@@ -2,27 +2,29 @@ import React, { useEffect, useRef, useState } from 'react';
 import "./informacion.css"
 
 function Informacion({tilte, image, informacion}) {
-        const contenedorRef = useRef(null); // Referencia al contenedor
-        const [isVisible, setIsVisible] = useState(false); // Estado para controlar la visibilidad del contenedor
-        
-        useEffect(() => {
-            const observer = new IntersectionObserver(
+    // Codigo de atividad del hover al hacer scroll
+    const contenedorRef = useRef(null); // Referencia al contenedor
+    const [isVisible, setIsVisible] = useState(false); // Estado para controlar la visibilidad del contenedor
+            
+    useEffect(() => {
+        const observer = new IntersectionObserver(
             ([entry]) => {
                 setIsVisible(entry.isIntersecting); // Cambia el estado si el contenedor es visible
             },
+
             { threshold: 0.5 } // El 50% del contenedor debe estar visible
-            );
-        
-            if (contenedorRef.current) {
+        );
+            
+        if (contenedorRef.current) {
             observer.observe(contenedorRef.current); // Observa el contenedor
-            }
-        
-            return () => {
+        }
+            
+        return () => {
             if (contenedorRef.current) {
-                observer.unobserve(contenedorRef.current); // Deja de observar el contenedor al desmontarlo
+                 observer.unobserve(contenedorRef.current); // Deja de observar el contenedor al desmontarlo
             }
-            };
-        }, []);
+        };
+    }, []);
 
     return (
         <div className="parte1">

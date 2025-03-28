@@ -1,5 +1,7 @@
 import React from 'react'
 import "./proyectos.css"
+
+// Componentes
 import ShowHide from './showHide'
 import { FaGithub, FaGlobe } from 'react-icons/fa';
 

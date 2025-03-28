@@ -1,5 +1,4 @@
 nav{
-    color: rgb(255, 255, 255);
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -15,12 +14,11 @@ nav{
     align-items: center;
     list-style: none;
     text-align: center;
-    width: 50%;
-    background-color: rgba(255, 255, 255);
-    filter: blur(0.3px);
+    width: 80%;
+    background-color: rgb(7, 25, 82, 0.9);
     transition: all 300ms;
     border-radius: 0 0 10px 10px;
-    box-shadow: 10px 30px 100px 20px black;
+    
 }
 
 .nav li{
@@ -33,11 +31,10 @@ nav{
 }
 
 .nav li a{
+    font-size: 100%;
     padding: 20px;
+    text-decoration: none;
     color: rgb(255, 255, 255);
-    text-decoration: none;
-    text-decoration: none;
-    color: rgb(0, 0, 0);
     display: block;
     transition: all 300ms;
 }
@@ -46,9 +43,10 @@ nav{
     color: rgb(0, 0, 0);
     border-radius: 0 50px 0 50px;
     padding: 10% 0%;
-    background-color:rgb(93, 188, 251);
+    background-color:rgb(151, 254, 237);
     cursor: pointer;
     transition: all 600ms;
+    box-shadow: 10px 30px 100px 20px rgb(151, 254, 237);
 }
 
 @media(max-width: 900px){

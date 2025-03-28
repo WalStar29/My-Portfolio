@@ -1,5 +1,7 @@
 import React from 'react';
 import "./footer.css";
+
+// Componentes
 import { FaWhatsapp, FaInstagram, FaGithub } from 'react-icons/fa';
 
 function Footer() {

@@ -1,27 +1,89 @@
-import React from 'react'
+import React, { useState } from "react";
+import emailjs from "emailjs-com";
 import "./formulario.css"
-function Formulario() {
-    return (
-        <form className='form' action="https://formsubmit.co/castrowalter172913@hotmail.com" method="POST">
-            <label htmlFor="nombre">Nombre y Apellido</label>
-            <input type="text" name='name' required />
 
-            <label htmlFor="Indique su correo electronico">Indique su correo electronico</label>
-            <input type="text" name='Correo' required/>
+const ContactForm = () => {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
+  });
 
-            <label htmlFor="Asunto">Asunto</label>
-            <input type="text" name='Asunto' required/>
-        
-            <div className="texBot">
-                <label htmlFor="Nota">Nota</label>
-                <textarea name="comentarios" required></textarea>
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
 
-                <input type="submit" value="Enviar" />
-            </div>
-            
-            <input type="hidden" name='_captcha' value="false"/>
-        </form>
-    )
-}
+  const handleSubmit = (e) => {
+    e.preventDefault();
 
-export default Formulario
+    // Configuración de EmailJS (reemplaza por tus datos de cuenta)
+    emailjs
+      .send(
+        "service_i9hcrdj", // ID de servicio
+        "template_31es16o", // ID de plantilla
+        formData,
+        "c4vBbV_qnRcHaiKun" // ID de usuario
+      )
+      .then(
+        (result) => {
+          alert("¡El mensaje fue enviado con éxito!");
+          setFormData({ name: "", email: "", subject: "", message: "" });
+        },
+        (error) => {
+          alert("Hubo un error al enviar el mensaje, por favor inténtalo nuevamente.");
+        }
+      );
+  };
+
+  return (
+    <form onSubmit={handleSubmit}>
+      <div>
+        <label>Nombre:</label>
+        <input
+          type="text"
+          name="name"
+          value={formData.name}
+          onChange={handleChange}
+          required
+        />
+      </div>
+      <div>
+        <label>Correo:</label>
+        <input
+          type="email"
+          name="email"
+          value={formData.email}
+          onChange={handleChange}
+          required
+        />
+      </div>
+      <div>
+        <label>Asunto:</label>
+        <input
+          type="text"
+          name="subject"
+          value={formData.subject}
+          onChange={handleChange}
+          required
+        />
+      </div>
+      <div className="texBot">
+        <label>Nota:</label>
+        <textarea
+          name="message"
+          value={formData.message}
+          onChange={handleChange}
+          required
+        ></textarea>
+      </div>
+
+      <div className="send">
+        <button type="submit">Enviar</button>
+      </div>
+      
+    </form>
+  );
+};
+
+export default ContactForm;
